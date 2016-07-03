@@ -1,0 +1,51 @@
+<link rel="stylesheet" type="text/css" href="css/paradise.css"/>
+<title>乐园</title>
+<!--分类-->
+<div id="sort">
+	<a>分类</a><a>全城</a><a>排序</a>			
+	<!--<div class="classify"></div>-->
+	<div class="city"></div>
+	<!--<div class="rank"></div>-->
+</div>
+
+
+<!--内容-->
+<div id="content">
+
+</div>
+				
+
+<script id="tx" type="text/html">
+	
+	<%if(data.length>1) { %>
+        <ul>
+            <%for(var i=0;i<data.length;i++){%>           	
+                <li>
+                	<a href="tpl/enjoydetail.html">
+                		<p class="add">
+                			<span class="address"><%=data[i]["address"]%></span>               			
+                			<span class="dist"><%=data[i]["dist"]%>公里</span>
+                		</p>
+                		<p class="name"><%=data[i]["name"]%></p>
+                		<img class="border" src= "img/img_paradise/border.gif" alt="" />
+                		<img class="map" src= "img/img_paradise/map.gif" alt="" />
+                		<img class="main_img" src= <%=data[i]['img']%> alt="" />
+                	</a>
+                </li>               
+            <%}%>
+        </ul>
+    <%}%>
+
+</script>
+
+<!--<script type="text/javascript">
+		
+		$.get("json/p21.json",callBack,"json");
+
+		function callBack(objs){
+//			console.log(objs);
+			var html = baidu.template('tx',objs);
+			content.innerHTML = html;
+		}
+	
+</script>-->

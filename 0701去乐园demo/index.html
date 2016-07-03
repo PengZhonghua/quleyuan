@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>		
+   		<link rel="stylesheet" type="text/css" media="all" href="css/Glyphicons.min.css" />
+
+		<!--<title>首页</title>-->
+		<style>			
+			/*底部导航*/
+			#navbar{
+				height: 2.65rem;
+				width: 16rem;				
+				position: fixed;
+				bottom: 0;
+				background-color: #fff;
+			}
+			#navbar>a{
+				display: block;
+				float: left;
+				height: 2.2rem;
+				width: 25%;
+				padding-top: 0.45rem;
+				text-align: center;	
+			}
+			#navbar a span img{
+				height: 1.15rem;
+			}
+			#navbar a p{
+				font-size: 0.6rem;	
+			}
+			#tc{
+				margin-bottom: 2.65rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="tc"></div>
+		<!--<span style="height: 30px;width:30px;color: red;" class="glyphicon glyphicon-ok"></span>-->
+		<!--底部导航-->
+		<div id="navbar">
+			<a href="#/home">
+				<span><img src="img/img_index/logo1.gif"/></span>
+				<p style="color: #e95d54;">首页</p>				
+			</a>
+			<a href="#/leyuan">
+				<span><img src="img/img_index/logo2b.gif"/></span>
+				<p>乐园</p>
+			</a>
+			<a href="#/order">
+				<span><img src="img/img_index/logo3b.gif"/></span>				
+				<p>乐享卡</p>
+			</a>
+			<a href="#/mine">
+				<span><img src="img/img_index/logo4b.gif"/></span>
+				<p>我的</p>
+			</a>
+		</div>
+		
+		
+		<script type="text/javascript" src="lib/require.js" data-main = "main.js"></script>
+		<script src="lib/jquery-2.2.3.js"></script>
+		<script>
+			document.documentElement.style.fontSize = innerWidth/16 + "px";
+			onresize = function(){
+				document.documentElement.style.fontSize = innerWidth/16 + "px";
+			}
+			
+			$("a",$("#navbar")).each(function(index){
+				$(this).click(function(){
+					$("p",$("#navbar")).css({color: "#000000"});
+					$("p",$(this)).css({color: "#e95d54"});
+					$("a",$("#navbar")).each(function(index){
+						$(this).find("img").attr("src","img/img_index/logo"+(index+1)+"b.gif");
+					});			
+					$("img",$(this)).attr("src","img/img_index/logo"+(index+1)+".gif");
+				})
+			})
+	
+		</script>
+	</body>
+</html>

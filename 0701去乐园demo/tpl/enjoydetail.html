@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    	<link rel="stylesheet" type="text/css" href="../css/enjoydetail.css"/>
+		<title>乐园详情</title>
+	</head>
+	<body>
+		<!--轮播图-->		
+		<div id="slide">			
+			<div class="bd">
+				<ul>
+					<li><a href="#"><img src="../img/img_enjoydetail/enjoydetail_02.png"/></a></li>
+					<li><a href="#"><img src="../img/img_enjoydetail/enjoydetail3_02.png"/></a></li>
+					<li><a href="#"><img src="../img/img_enjoydetail/enjoydetail3_02.png"/></a></li>
+					<li><a href="#"><img src="../img/img_enjoydetail/enjoydetail_02.png"/></a></li>
+					<li><a href="#"><img src="../img/img_enjoydetail/enjoydetail3_02.png"/></a></li>
+					<li><a href="#"><img src="../img/img_enjoydetail/enjoydetail_02.png"/></a></li>
+					<li><a href="#"><img src="../img/img_enjoydetail/enjoydetail3_02.png"/></a></li>
+				</ul>
+			</div>
+			<div class="hd">
+				<ul></ul>
+			</div>
+		</div>
+		
+		<!--乐园简介-->
+		<div id="detail">			
+			
+			<!--地址信息-->
+			<div id="address">
+				<p>
+					<span>梦追忆&家宝贝亲子乐园</span>
+					<span>梦追忆&家宝贝亲子乐园</span>
+				</p>
+				<a href="map.html">
+					<img src="../img/img_enjoydetail/map2.png" alt="" />
+					<span>北京市昌平区文化路89号院1号雅酷儿童世界2层8号</span>
+					<img src="../img/img_enjoydetail/arrow.gif" alt="" />
+				</a>
+			</div>
+			
+			<!--乐园产品-->
+			<div id="product">
+				<p class="title">本店热门产品</p>
+				<div class="card">
+					<p>梦追忆乐享25次卡</p>
+					<p>
+						<span>488.00元 </span>
+						<span> 760.00元</span>
+						<span> 25次</span>
+					</p>
+					<p><a href="#">查看详情</a></p>
+					<span>乐享卡</span>
+					<a href="#">购买</a>
+				</div>
+				<div class="card">
+					<p>梦追忆乐享12次卡</p>
+					<p>
+						<span>288.00元 </span>
+						<span> 388.00元</span>
+						<span> 12次</span>
+					</p>
+					<p><a href="#">查看详情</a></p>
+					<span>乐享卡</span>
+					<a href="#">购买</a>
+				</div>
+				<div class="card">
+					<p>梦追忆乐享40次卡</p>
+					<p>
+						<span>660.00元 </span>
+						<span> 888.00元</span>
+						<span> 40次</span>
+					</p>
+					<p><a href="#">查看详情</a></p>
+					<span>乐享卡</span>
+					<a href="#">购买</a>
+				</div>
+			</div>
+		
+			<!--商家介绍-->
+			<div id="infor">
+				<p class="p">
+					<p>商家介绍：</p>
+					<p>梦追忆&家宝贝亲子乐园是一家全国连锁品牌，内含淘气包，充气城堡，泡泡屋，动物转马，沙地，蹦床，迷宫隧道等等设备，即可以让孩子锻炼身体，又能启发智慧，让您的孩子流连忘返。</p>
+				</p>
+				<p class="p">
+					<p>购买须知：</p>
+					<p>儿童均可携带一名成人入园，无任何条件</p>
+				</p>
+				<p class="p">
+					<p>有效期：</p>
+					<p>2015-08-14至2017-11-14</p>
+				</p>
+				<p class="p">
+					<p>使用时间：</p>
+					<p>10:00-21:00</p>
+				</p>
+				<p class="p">
+					<p>预约信息：</p>
+					<p>无需预约，如遇消费高峰时段您可能需要排队</p>
+				</p>
+				<p class="p">
+					<p>规则提醒：</p>
+					<p>本卡一经验证，不可退换</p>
+				</p>
+				<p class="p">
+					<p>全场通用：</p>
+					<p>不再与替她优惠同享</p>
+				</p>
+				<p class="p">
+					<p>温馨提示：</p>
+					<p>如有其他需要，请你在消费时向商户咨询，本店提供免费WIFI，免费饮水，免费榨果汁</p>
+				</p>
+				<p class="p">
+					<p>优惠规则：</p>
+					<p>每张去了园券限一人使用</p>
+				</p>
+			</div>
+			
+			<!--二维码-->
+			<div id="code">
+				<img src="../img/img_enjoydetail/code2_02.png"/>
+			</div>
+		</div>
+
+
+		<script src="../lib/jquery-2.2.3.js"></script>
+		<script src="../lib/TouchSlide.1.1.js"></script>
+		<script>
+			document.documentElement.style.fontSize = innerWidth/16 + "px";
+			onresize = function(){
+				document.documentElement.style.fontSize = innerWidth/16 + "px";
+			}
+			
+			//轮播模块
+			TouchSlide({ 
+				slideCell:"#slide",
+				titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+				mainCell:".bd ul", 
+				effect:"leftLoop", 
+				autoPlay:true,//自动播放
+				autoPage:"<li></li>", //自动分页
+			});
+		</script>
+		<!--<script src="css/enjoydetail.js"></script>-->
+	</body>
+</html>

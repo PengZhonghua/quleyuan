@@ -1,0 +1,71 @@
+#box{
+	height: 22.5rem;
+	overflow: hidden;
+	background-color: #EEEEEE;
+	border-bottom: 1px solid #d6d6d6;
+}
+
+/*分享乐园卡*/
+#share{
+	height: 6.125rem;
+	margin-top: 0.5rem;
+	border-bottom: 1px solid #d5d5d5;
+	border-top: 1px solid #d5d5d5;
+	text-align: center;
+	background-color: white;
+}
+#share img{
+	height: 1.975rem;
+	margin-top: 1.6rem;
+}
+#share p{
+	font-size: 0.65rem;
+	margin-top: 0.8rem;
+	color: #717171;
+}
+
+/*购买乐园卡*/
+#buy{
+	height: 9.25rem;
+	margin-top: 0.5rem;
+	border-bottom: 1px solid #d5d5d5;
+	border-top: 1px solid #d5d5d5;
+	text-align: center;
+	background-color: white;
+}
+
+#buy img{
+	height: 3.9rem;
+	margin-top: 1.25rem;
+}
+#buy p{
+	margin-top: 0.5rem;
+	font-size: 0.65rem;
+	color: #717171;
+}
+#buy p a{
+	color: black;
+	text-decoration: underline;
+}
+
+/*底部导航*/
+#navbar{
+	height: 2.65rem;	
+}
+#navbar>a{
+	display: block;
+	float: left;
+	height: 2.2rem;
+	width: 25%;
+	padding-top: 0.45rem;
+	text-align: center;	
+}
+#navbar a span img{
+	height: 1.15rem;
+}
+#navbar a p{
+	font-size: 0.6rem;	
+}
+/*#navbar a:first-child p{
+	color: #e95d54;
+}*/

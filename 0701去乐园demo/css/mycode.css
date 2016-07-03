@@ -1,0 +1,38 @@
+#head img{
+	width: 16rem;
+	vertical-align: bottom;
+}
+
+/*我的列表*/
+#list{
+	height: 15rem;
+	width: 16rem;
+	background-color: #eee;
+}
+#list a{
+	display: inline-block;
+	position: relative;
+	height: 2rem;
+	width: 13.2rem;
+	margin:0 0.65rem;
+	border: 0.075rem solid #ccc;
+	border-radius: 0.25rem;
+	margin-top: 0.3rem;
+	padding: 0 0.75rem;
+	line-height: 2rem;
+	font-size: 0.65rem;
+	color: #555353;	
+	background-color: white;
+}
+#list a img{
+	display: block;
+	margin-top: 0.65rem;
+	float: right;
+	height: 0.9rem;
+}
+#list span{
+	/*display: inline-block;*/
+	position: absolute;
+	left: 11.5rem;
+	font-size: 0.55rem;
+}

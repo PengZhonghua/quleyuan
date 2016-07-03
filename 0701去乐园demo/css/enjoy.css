@@ -1,0 +1,64 @@
+#banner{
+	height: 7.65rem;
+	width: 16rem;
+	margin-bottom: 0.875rem;
+}
+#banner img{
+	width: 16rem;
+	vertical-align: center;
+}
+
+
+/*乐享专区图片内容*/
+#content{
+	/*min-height: 50.4rem;*/
+}
+#content a{
+	display: inline-block;
+	position: relative;
+	height: 7.2rem;
+	width: 100%;
+	color: white;
+	background: center center no-repeat;	
+}
+#content a .border{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 2.475rem;
+}
+#content a .map{
+	position: absolute;
+	top: 4.5rem;
+	right: 2rem;
+	width: 0.65rem;
+}
+#content ul li a .name{
+	position: absolute;
+	top: 4.25rem;
+	left: 0.8rem;
+	font-size: 0.8rem;
+}
+#content ul li a .add .address{
+	position: absolute;
+	top: 5.6rem;
+	left: 0.8rem;
+	font-size: 0.8rem;
+}
+#content ul li a .add .dist{
+	position: absolute;
+	top: 5.7rem;
+	right: 1.3rem;
+	font-size: 0.65rem;
+}
+#content li{
+	width: 16rem;
+	height: 7.2rem;
+	margin-bottom: 0.15rem;
+	/*background: url(../img/img_paradise/1.jpg) no-repeat;*/
+	background-size: 16rem 7.2rem;
+}
+#content ul li a .main_img{
+	height: 7.2rem;
+	width: 100%;
+}
